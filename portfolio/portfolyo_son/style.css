@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins&family=Simonetta&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
+}
+
+.offset::before {
+    display: block;
+    content: "";
+    height: 6rem;
+}
+
+.navbar {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    background: rgba(0, 0, 0, 0.6) !important;
+    padding: 20px 0;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+    padding-left: 20px;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #1ebba3;
+}
+
+.heading-content {
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    max-width: 100%;
+}
+
+.heading-content h5 {
+    font-size: 4em;
+    font-weight: 300;
+    font-family: monospace;
+    color: #fff;
+}
+
+.heading-content h1 {
+    font-size: 6em;
+    font-weight: bolder;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+}
+
+.heading-content p {
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-family: monospace;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+    color: #ccc;
+}
+
+
+/*----2----------------about start------------------*/
+
+.about2 {
+    margin: 3em;
+    border: 5px solid black;
+    width: 15em;
+    height: 3em;
+    background: black;
+    border-radius: 10px;
+}
+
+.about2 a {
+    text-decoration: none;
+}
+
+#About .btn {
+    border: 2px solid transparent;
+    width: 40%;
+    padding: 15px 22 px;
+    background: #000;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#About .btn {
+    text-decoration: none;
+    color: #1ebba3;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#About .btn:hover {
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+
+#Services .button {
+    border: 2px solid transparent;
+    width: 40%;
+    padding: 15px 22 px;
+    background: #000;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#Services .button {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#Services .button:hover {
+    border: 2px solid #1ebba3;
+    cursor: pointer;
+}
+
+
+/*-------------media query-------------*/
+
+@media screen and (max-width:767px) {
+    /*--------tablets-------*/
+    .navbar {
+        letter-spacing: 0.1em;
+        padding: 20px 0;
+    }
+    .heading-content h5 {
+        font-size: 3em;
+    }
+    .heading-content h1 {
+        font-size: 3em;
+    }
+    .heading-content p {
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (max-width:479px) {
+    /*--------- smartphones ------------*/
+    .navbar {
+        letter-spacing: 0.1em;
+        padding: 7px 0;
+    }
+    .heading-content h5 {
+        font-size: 2em;
+    }
+    .heading-content h1 {
+        font-size: 2em;
+    }
+    .heading-content p {
+        font-size: 0.7em;
+    }
+    #Contact .post-heading h3 {
+        font-size: 2em;
+    }
+}
